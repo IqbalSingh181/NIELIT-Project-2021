@@ -32,8 +32,8 @@ def insertUser(username, email, password, contact):
     phone = int(contact)
     query = ("""INSERT INTO signup
              (username,email,password,contact)
-             VALUES ('%s','%s','%s',%d)""" %
-             (username, email, password, phone))
+             VALUES ('%s','%s','%s',%s)""" %
+             (username, email, password, contact))
     cur.execute(query)
     con.commit()
     con.close()
