@@ -1,0 +1,157 @@
+<html>
+<head>
+  <style>
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center; 
+}
+  margin: 0;
+  font-family: Arial;
+}
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: blue;
+}
+
+.topnav a {
+  float: top-center;
+    
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+   
+}
+
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.topnav a.active {
+   color: black;
+}
+
+    
+</style>
+  <title>Car Re-Sale Price Prediction</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<style>
+		.banner-products {
+  min-height: 60vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://lh3.googleusercontent.com/proxy/lxfcBkWzZ3AaSZiSvOl4hURsxaZnGxAl-1Ub-HwnPPVseK0G_5UVX_T9crh93496ce5baKi4Ch4k6l01g3-2j-WafNmqqRJgiXY6yJ4NJttDNqYutaVXLyrN72eDURQZaqGaq_VMDG2M_rPajTH0wHZnHQbcA1nyCaxkaHEVvBPM-104YYn57kKeTJKCy0I6") center/cover fixed no-repeat;
+}
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+  font-size: 3rem;
+  color: #fff;
+ 
+}
+
+.text-slant {
+  font-family: "Caveat", cursive;
+}
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline__center {
+  position: absolute;
+  height: 0.6rem;
+  background: green;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+	</style>
+</head>
+<body div style="background-image: url('static/car9.png');">
+  <div class="topnav">
+  <div class="row">      
+    
+  <div style="display: inline-block;padding: 30px"><a class="active" href="/mainpage">Home</a></div>
+  <div style="display: inline-block;padding: 30px"><a href="/about">About</a></div>
+  <div style="display: inline-block;padding: 30px"><a href="/predict">Predict</a></div>
+  <div style="display: inline-block;padding: 30px"><a href="/contact">Contact</a></div>
+  <div style="display: inline-block;padding: 30px"><a href="/logout">Logout</a></div>
+  
+</div>
+
+<section class="about pt-2">
+    <div class="row ">
+        <div class="container-fluid">
+            <div class="col-12 mx-auto">
+                   <div
+                        class="banner-products d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center"
+                     >
+                        <div>
+                        <h1 class="text-capitalize text-danger text-slanted display-4">
+                            CAR RE-SALE PRICE PREDICTION USING-MACHINE LEARNING
+                        </h1>
+                        <h2 class="text-capitalize text-dark text-slanted">
+                            Algorithm Used - Random Forest Regressoin Algorithm
+                        </h2>
+                        </div>
+                    </div>
+                    
+                    <div align="center"><img src="/static/algo.png" width="70%" ></div>
+                    <br>
+                    <p style="text-align: center;font-size: 30px">"Random Forest is a classifier that contains a number of decision trees on various subsets of the given dataset and takes the average to improve the predictive accuracy of that dataset."
+                      <br></p>
+                    
+                    <div align="center"><img src="/static/about.png" width="70%" ></div>
+                    <br>
+                    <p style="text-align: center;font-size: 30px">In a Simple Language - Random Forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.</p>
+                    <div class="col text-left section-title mb-3 py-5" style={background-color: rgb(235, 235, 235);} >
+                        <h6 class="text-capitalize text-center text-dark text-slanted ">The Model is Trained and it gives an accuracy of 90% for Estimating the Resale Value of any Car ranging from ₹50,000/- to ₹50,00,000/-</h6>
+                        
+                        <div class="row py-5 ">
+                            <div class="col-lg-6 col-10 mx-auto mt-3">
+                                <img src=https://www.simplilearn.com/ice9/free_resources_article_thumb/Deep-Learning-vs-Machine-Learning.jpg" class="img-fluid" alt=""/>
+
+                            </div>
+                            <div class="col-lg-6 col-10 mx-auto mt-3">
+                                <div>
+                                    <h1 class="text-capitalize text-success text-slanted display-4">
+                                       Developers - Iqbal Singh & Aadi Sharma 
+                                    </h1>
+                                    
+                                    <p class="text-dark text-justify" style="font-size: 40px">
+                                         To contact us <a href="/contact">click here</a>
+                                    </p>
+                                </div>
+                                   
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                      
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+</body>
+</html>
+

@@ -1,0 +1,2 @@
+To run on Command Prompt write command
+- python app.py
