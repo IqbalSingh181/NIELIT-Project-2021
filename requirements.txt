@@ -1,0 +1,14 @@
+Flask==1.1.2
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+Werkzeug==1.0.1
+numpy==1.16.6
+scikit-learn>=0.18
+matplotlib>=1.4.3
+pandas>=0.19
+Flask-Cors==3.0.10
+Flask-SQLAlchemy==2.5.1
+db==0.1.1
+db-sqlite3==0.0.1
