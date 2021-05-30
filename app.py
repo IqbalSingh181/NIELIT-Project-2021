@@ -64,7 +64,7 @@ def home111():
     return render_template('login_1.html')
 
 # Login page
-@app.route('/signin/', methods=['GET', 'POST'])
+@app.route('/login_1', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         rd = validUser(request.form['email'], request.form['password'])
@@ -76,11 +76,6 @@ def login():
             return render_template('login_1.html',msg=msg)
     else:
         return render_template('login_1.html')
-
-@app.route('/signin/logout')
-def logout():
-	session.pop('user', None)
-	return render_template('login_1.html')
     
     
 @app.route('/logout')
