@@ -64,7 +64,7 @@ def home111():
     return render_template('login_1.html')
 
 # Login page
-@app.route('/signin', methods=['GET', 'POST'])
+@app.route('/signin/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         rd = validUser(request.form['email'], request.form['password'])
