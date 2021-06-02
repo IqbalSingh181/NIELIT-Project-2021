@@ -27,7 +27,7 @@ def after_request(response):
 #  Insert data in database (SIGNUP)
 # ==================================
 def insertUser(username, email, password, contact):
-    con = sql.connect("signup.db")
+    con = sql.connect("SignUP.db")
     cur = con.cursor()
     phone = int(contact)
     query = ("""INSERT INTO signup
@@ -43,7 +43,7 @@ def insertUser(username, email, password, contact):
 #  Validating data in database (LOGIN)
 # =====================================
 def validUser(email, password):
-    con = sql.connect("signup.db")
+    con = sql.connect("SignUP.db")
     cur = con.cursor()
     query = ("""SELECT * FROM signup
              where email = '%s' and password = '%s'
