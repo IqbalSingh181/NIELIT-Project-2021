@@ -30,7 +30,7 @@ def insertUser(username, email, password, contact):
     con = sql.connect("SignUP.db")
     cur = con.cursor()
     phone = int(contact)
-    query = ("""INSERT INTO signup
+    query = ("""INSERT INTO SignUP
              (username,email,password,contact)
              VALUES ('%s','%s','%s',%s)""" %
              (username, email, password, contact))
@@ -45,7 +45,7 @@ def insertUser(username, email, password, contact):
 def validUser(email, password):
     con = sql.connect("SignUP.db")
     cur = con.cursor()
-    query = ("""SELECT * FROM signup
+    query = ("""SELECT * FROM SignUP
              where email = '%s' and password = '%s'
              """ %
              (email, password))
